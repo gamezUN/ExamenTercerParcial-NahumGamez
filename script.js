@@ -12,6 +12,8 @@
         'bowser':  'imagenes/bowser.jpg',
         'toad':  'imagenes/toad.jpg',
         'peach':  'imagenes/peach.jpg',
+        'Luigi': 'imagenes/luigi.jpg',
+        'Yoshi': 'imagenes/yoshi.jpg',
     };
 
     function updateInterface() {
@@ -46,7 +48,7 @@
 
         let driverLevel = parseInt(document.getElementById('driverLevel').value);
         if (isNaN(driverLevel) || driverLevel < 1) driverLevel = 1;
-        if (driverLevel > 5) driverLevel = 5;
+        if (driverLevel > 9) driverLevel = 9;
 
         // FÓRMULA
         let total = (characterBase + tireValue + upgradesValue) * driverLevel;
